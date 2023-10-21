@@ -1,33 +1,38 @@
-## Install Jenkins
-```
-# Step 1 — Installing Jenkins
+# Installing Jenkins
 First, add the repository key to the system:
+
 ```
 wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
 ```
-Copy
 After the key is added the system will return with OK.
-Next, let’s append the Debian package repository address to the server’s sources.list:
-1.	sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
-2.	
-Copy
+Next, let’s append the Debian package repository address to the server’s **sources.list:**
+```
+sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+```
+
 After both commands have been entered, we’ll run update so that apt will use the new repository.
-1.	sudo apt update
-2.	
-Copy
+```
+sudo apt update
+```
+
 Finally, we’ll install Jenkins and its dependencies.
-1.	sudo apt install jenkins
-2.	
-Copy
+```
+sudo apt install jenkins
+```   
 Now that Jenkins and its dependencies are in place, we’ll start the Jenkins server.
-Step 2 — Starting Jenkins
-Let’s start Jenkins by using systemctl:
+
+## Starting Jenkins
+Let’s start Jenkins by using **systemctl:**
+```
 sudo systemctl start jenkins
+```
 Since systemctl doesn’t display status output, we’ll use the status command to verify that Jenkins started successfully:
-1.	sudo systemctl status jenkins
-2.	
-Copy
+```
+sudo systemctl status jenkins
+```
+
 If everything went well, the beginning of the status output shows that the service is active and configured to start at boot:
+```
 Output
 ● jenkins.service - LSB: Start Jenkins at boot time
    Loaded: loaded (/etc/init.d/jenkins; generated)
@@ -35,23 +40,25 @@ Output
      Docs: man:systemd-sysv-generator(8)
     Tasks: 0 (limit: 1137)
    CGroup: /system.slice/jenkins.service
+```
 Now that Jenkins is up and running, let’s adjust our firewall rules so that we can reach it from a web browser to complete the initial setup.
 Step 3 — Opening the Firewall
 To set up a UFW firewall, visit Initial Server Setup with Ubuntu 20.04, Step 4- Setting up a Basic Firewall. By default, Jenkins runs on port 8080. We’ll open that port using ufw:
-1.	sudo ufw allow 8080
-2.	
-Copy
+```
+sudo ufw allow 8080
+```
 Note: If the firewall is inactive, the following commands will allow OpenSSH and enable the firewall:
-1.	sudo ufw allow OpenSSH
-2.	
-3.	sudo ufw enable
-4.	
-Copy
+```
+sudo ufw allow OpenSSH
+sudo ufw enable
+
 Check ufw’s status to confirm the new rules:
-1.	sudo ufw status
-2.	
-Copy
+```
+sudo ufw status
+```
+
 You’ll notice that traffic is allowed to port 8080 from anywhere:
+```
 Output
 Status: active
 
@@ -61,8 +68,10 @@ OpenSSH                    ALLOW       Anywhere
 8080                       ALLOW       Anywhere
 OpenSSH (v6)               ALLOW       Anywhere (v6)
 8080 (v6)                  ALLOW       Anywhere (v6)
+```
 With Jenkins installed and our firewall configured, we can complete the installation stage and dive into Jenkins setup.
-Step 4 — Setting Up Jenkins
+
+## Setting Up Jenkins
 To set up your installation, visit Jenkins on its default port, 8080, using your server domain name or IP address: http://your_server_ip_or_domain:8080
 You should receive the Unlock Jenkins screen, which displays the location of the initial password:
 
