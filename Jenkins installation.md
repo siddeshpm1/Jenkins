@@ -116,10 +116,5 @@ At this point, you have completed a successful installation of Jenkins.
 Conclusion
 
 In this tutorial, you installed Jenkins using the project-provided packages, started the server, opened the firewall, and created an administrative user. At this point, you can start exploring Jenkins.
-When you’ve completed your exploration, follow the guide How to Configure Jenkins with SSL Using an Nginx Reverse Proxy on Ubuntu 20.04 to protect your passwords, as well as any sensitive system or product information that will be sent between your machine and the server in plain text to continue using Jenkins.
 
-To learn more about what you can do using Jenkins, check out other tutorials on the subject:
-•	How to Build Android Apps with Jenkins
-•	How To Set Up Continuous Integration Pipelines in Jenkins on Ubuntu 16.04
 
-![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/87a88c85-82a5-4a9c-b612-62f4e0566239)
