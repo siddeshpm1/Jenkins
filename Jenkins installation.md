@@ -51,7 +51,7 @@ Note: If the firewall is inactive, the following commands will allow OpenSSH and
 ```
 sudo ufw allow OpenSSH
 sudo ufw enable
-
+```
 Check ufw’s status to confirm the new rules:
 ```
 sudo ufw status
