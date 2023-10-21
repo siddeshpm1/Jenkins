@@ -1,4 +1,10 @@
-Step 1 — Installing Jenkins
+## Install Jenkins
+```
+helm repo add jenkins https://charts.jenkins.io
+helm repo update
+helm pull jenkins/jenkins --untar
+```
+# Step 1 — Installing Jenkins
 The version of Jenkins included with the default Ubuntu packages is often behind the latest available version from the project itself. To ensure you have the latest fixes and features, use the project-maintained packages to install Jenkins.
 First, add the repository key to the system:
 1.	wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
