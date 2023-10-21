@@ -86,19 +86,31 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Copy the 32-character alphanumeric password from the terminal and paste it into the Administrator password field, then click Continue.
 The next screen presents the option of installing suggested plugins or selecting specific plugins:
 
+![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/63174b88-fb53-46c4-93ec-517381e6a242)
+
 We’ll click the Install suggested plugins option, which will immediately begin the installation process.
+
+![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/6b1b6b4c-934b-4376-85a9-a93267fd39c4)
 
 When the installation is complete, you’ll be prompted to set up the first administrative user. It’s possible to skip this step and continue as admin using the initial password we used above, but we’ll take a moment to create the user.
 
-Note: The default Jenkins server is NOT encrypted, so the data submitted with this form is not protected. Refer to How to Configure Jenkins with SSL Using an Nginx Reverse Proxy on Ubuntu 20.04 to protect user credentials and information about builds that are transmitted via the web interface.
+![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/31c258f1-2033-4709-aa20-f613a5610ed0)
 
 Enter the name and password for your user:
 
+![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/ed5a8abd-c430-434e-ae7a-6ddba2168391)
+
 You’ll receive an Instance Configuration page that will ask you to confirm the preferred URL for your Jenkins instance. Confirm either the domain name for your server or your server’s IP address:
+
+![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/3c131519-c4ed-4f50-98c2-d99473839bca)
 
 After confirming the appropriate information, click Save and Finish. You’ll receive a confirmation page confirming that “Jenkins is Ready!”:
 
+![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/0873dd07-f887-405d-8916-874dee77b4bb)
+
 Click Start using Jenkins to visit the main Jenkins dashboard:
+
+![Uploading image.png…]()
 
 At this point, you have completed a successful installation of Jenkins.
 Conclusion
