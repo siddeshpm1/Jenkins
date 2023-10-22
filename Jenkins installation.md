@@ -77,6 +77,7 @@ With Jenkins installed and our firewall configured, we can complete the installa
 
 ## Setting Up Jenkins
 To set up your installation, visit Jenkins on its default port, 8080, using your server domain name or IP address: http://your_server_ip_or_domain:8080
+(If you are using EC2 machine copy the ip of EC2 IP ex--http://172.96.35.23:8080)
 You should receive the Unlock Jenkins screen, which displays the location of the initial password:
 
 ![image](https://github.com/siddeshpm1/Jenkins/assets/109099693/0e00d18f-e6a9-4388-8c75-0fd2350728a0)
