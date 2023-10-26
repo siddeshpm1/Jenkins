@@ -1,5 +1,10 @@
 # Installing Jenkins
-First, add the repository key to the system:
+Prerequisites 
+Java should be installed 
+```
+Ref: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04#installing-specific-versions-of-openjdk
+```
+Add the repository key to the system:
 
 ```
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
