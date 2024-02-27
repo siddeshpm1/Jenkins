@@ -44,7 +44,8 @@
      - same Java version  
      - Same Maven version   
   1. In case Jave or Maven paths are referring to the agent system then aline it according to masters `Global Tool Configuration`  
-  1. In case the case of the AWS server make sure your Jenkins URL should be updated to the latest Public IP.   
+  1. In case the case of the AWS server make sure your Jenkins URL should be updated to the latest Public IP.
+  2. Securety--> agent--> random
   
 
 ## Contributing
