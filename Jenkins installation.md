@@ -2,7 +2,7 @@
 Prerequisites 
 Java should be installed 
 ```
-Ref: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04#installing-specific-versions-of-openjdk
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04#installing-specific-versions-of-openjdk
 ```
 Add the repository key to the system:
 
